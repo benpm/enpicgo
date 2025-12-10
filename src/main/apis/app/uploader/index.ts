@@ -44,9 +44,9 @@ const handleTalkingData = (webContents: WebContents, options: IAnalyticsData) =>
     EventId: 'upload',
     Label: options.type,
     MapKv: {
-      by: options.fromClipboard ? 'clipboard' : 'files', // 上传剪贴板图片还是选择的文文件
-      count: options.count, // 上传的数量
-      duration: calcDurationRange(options.duration || 0), // 上传耗时
+      by: options.fromClipboard ? 'clipboard' : 'files', // Upload from clipboard or selected files
+      count: options.count, // Number of uploads
+      duration: calcDurationRange(options.duration || 0), // Upload duration
       type: options.type
     }
   }

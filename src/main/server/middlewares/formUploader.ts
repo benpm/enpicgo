@@ -65,7 +65,7 @@ class FormUploader {
   }
 
   /**
-   * 处理文件上传的中间件
+   * Middleware to handle file uploads
    */
   public handleFileUpload = (request: http.IncomingMessage, response: http.ServerResponse): void => {
     logger.info('[PicGo Server] handling file upload')
@@ -115,7 +115,7 @@ class FormUploader {
   }
 
   /**
-   * 检查请求是否为文件上传
+   * Check if the request is a file upload
    */
   public isFileUpload (request: http.IncomingMessage): boolean {
     return !!(request.headers['content-type'] && request.headers['content-type'].includes('multipart/form-data'))
