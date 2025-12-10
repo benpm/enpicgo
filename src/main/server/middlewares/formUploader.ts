@@ -8,7 +8,7 @@ import { handleResponse } from '../utils'
 import routers from '../routerManager'
 import { FORM_IMAGE_FOLDER } from '~/universal/utils/static'
 
-// Multer 错误类型定义
+// Multer error type definition
 export interface MulterError extends Error {
   code: string
   field?: string

@@ -472,7 +472,7 @@ function multiRemove () {
       }
       clearSelectedList()
       // TODO: check this
-      // selectedList = {} // 只有删除才能将这个置空
+      // selectedList = {} // Only deletion can clear this
       const obj = {
         title: $T('OPERATION_SUCCEED'),
         body: ''

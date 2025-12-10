@@ -41,7 +41,7 @@ const isDevelopment = isDev
 
 const handleStartUpFiles = (argv: string[], cwd: string) => {
   const files = getUploadFiles(argv, cwd, logger)
-  if (files === null || files.length > 0) { // 如果有文件列表作为参数，说明是命令行启动
+  if (files === null || files.length > 0) { // If there is a file list as a parameter, it means it is started from the command line
     if (files === null) {
       logger.info('cli -> uploading file from clipboard')
       uploadClipboardFiles()
