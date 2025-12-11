@@ -1,16 +1,4 @@
-<div align="center" markdown="1">
-  <sup>Special thanks to:</sup>
-  <br>
-  <a href="https://go.warp.dev/picgo">
-    <img alt="Warp sponsorship" width="400" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-03.png">
-  </a>
-
-### [Warp, the intelligent terminal for developers](https://go.warp.dev/picgo)
-[Available for MacOS, Linux, & Windows](https://go.warp.dev/picgo)<br>
-
-</div>
-
----
+_THIS IS A FORK!_
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/Molunerfinn/test/master/picgo/New%20LOGO-150.png" alt="">
