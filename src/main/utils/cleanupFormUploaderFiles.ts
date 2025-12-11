@@ -12,7 +12,7 @@ export const cleanupFormUploaderFiles = (fileInfoList?: string[] | ImgInfo[]): v
         return
       }
       try {
-        // 检查文件路径是否在 formImageFolderPath 目录下
+        // Check if the file path is within the formImageFolderPath directory
         const relativePath = path.relative(formImageFolderPath, filePath)
         const isWithinFolder = !relativePath.startsWith('..') && !path.isAbsolute(relativePath)
 

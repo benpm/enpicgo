@@ -5,15 +5,15 @@
       img.logo(src="~icons/256x256.png", alt="PicGo")
       h1.title PicGo
         small(v-if="version") {{ version }}
-      h2.desc 图片上传+管理新体验
-      button.download(@click="goLink('https://github.com/Molunerfinn/picgo/releases')") 免费下载
-      button.download(@click="goLink('https://picgo.github.io/PicGo-Doc/guide/')") 查看文档
+      h2.desc A new experience for image uploading and management
+      button.download(@click="goLink('https://github.com/Molunerfinn/picgo/releases')") Free Download
+      button.download(@click="goLink('https://picgo.github.io/PicGo-Doc/guide/')") View Documentation
       h3.desc
         | 基于#[a(href="https://github.com/SimulatedGREG/electron-vue" target="_blank") electron-vue]开发
       h3.desc
-        | 支持macOS,Windows,Linux
+        | Supports macOS, Windows, Linux
       h3.desc
-        | 支持#[a(href="https://picgo.github.io/PicGo-Doc/guide/config.html#%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE%EF%BC%88v2-0%EF%BC%89" target="_blank") 插件系统]，让PicGo更强大
+        | Supports #[a(href="https://picgo.github.io/PicGo-Doc/guide/config.html#%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE%EF%BC%88v2-0%EF%BC%89" target="_blank") plugin system], making PicGo more powerful
     #container.container-fluid
       .row.ex-width
         img.gallery.col-xs-10.col-xs-offset-1.col-md-offset-2.col-md-8(src="https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/first.png")
@@ -38,33 +38,33 @@ export default {
       itemList: [
         {
           url: 'https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/second.png',
-          title: '精致设计',
-          desc: 'macOS系统下，支持拖拽至menubar图标实现上传。menubar app 窗口显示最新上传的5张图片以及剪贴板里的图片。点击图片自动将上传的链接复制到剪贴板。（Windows平台不支持）'
+          title: 'Elegant Design',
+          desc: 'On macOS, supports drag and drop to the menubar icon for uploads. The menubar app window displays the 5 most recent uploaded images and clipboard images. Click on images to automatically copy the upload link to clipboard. (Not supported on Windows)'
         },
         {
           url: 'https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/third.png',
-          title: 'Mini小窗',
-          desc: 'Windows以及Linux系统下提供一个mini悬浮窗用于用户拖拽上传，节约你宝贵的桌面空间。'
+          title: 'Mini Window',
+          desc: 'Windows and Linux systems provide a mini floating window for drag-and-drop uploads, saving your valuable desktop space.'
         },
         {
           url: 'https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/forth.png',
-          title: '便捷管理',
-          desc: '查看你的上传记录，重复使用更方便。支持点击图片大图查看。支持删除图片（仅本地记录），让界面更加干净。'
+          title: 'Convenient Management',
+          desc: 'View your upload history for easy reuse. Supports clicking images for full-size view. Supports deleting images (local records only) to keep the interface clean.'
         },
         {
           url: 'https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/fifth.png',
-          title: '可选图床',
-          desc: '默认支持微博图床、七牛图床、腾讯云COS、又拍云、GitHub、SM.MS、阿里云OSS、Imgur。方便不同图床的上传需求。2.0版本开始更可以自己开发插件实现其他图床的上传需求。'
+          title: 'Multiple Image Hosts',
+          desc: 'Default support for Weibo, Qiniu, Tencent Cloud COS, Upyun, GitHub, SM.MS, Alibaba Cloud OSS, Imgur. Convenient for different image hosting needs. Starting from version 2.0, you can also develop plugins to implement uploads to other image hosts.'
         },
         {
           url: 'https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/sixth.png',
-          title: '多样链接',
-          desc: '支持5种默认剪贴板链接格式，包括一种自定义格式，让你的文本编辑游刃有余。'
+          title: 'Various Link Formats',
+          desc: 'Supports 5 default clipboard link formats, including one custom format, making your text editing effortless.'
         },
         {
           url: 'https://cdn.jsdelivr.net/gh/Molunerfinn/test/picgo-site/seventh.png',
-          title: '插件系统',
-          desc: '2.0版本开始支持插件系统，让PicGo发挥无限潜能，成为一个极致的效率工具。'
+          title: 'Plugin System',
+          desc: 'Starting from version 2.0, supports plugin system, allowing PicGo to unleash unlimited potential and become an ultimate productivity tool.'
         }
       ]
     }

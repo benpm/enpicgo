@@ -15,7 +15,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/Molunerfinn/test/master/picgo/New%20LOGO-150.png" alt="">
   <h1>PicGo</h1>
-  <blockquote>图片上传+管理新体验 </blockquote>
+  <blockquote>A new experience for image uploading and management</blockquote>
   <a href="https://github.com/Molunerfinn/PicGo/actions">
     <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="">
   </a>
@@ -33,110 +33,110 @@
   </a>
 </div>
 
-## 应用概述
+## Application Overview
 
-**PicGo: 一个用于快速上传图片并获取图片 URL 链接的工具**
+**PicGo: A tool for quickly uploading images and getting image URL links**
 
-PicGo 本体支持如下图床：
+PicGo natively supports the following image hosting services:
 
-- `七牛图床` v1.0
-- `腾讯云 COS v4\v5 版本` v1.1 & v1.5.0
-- `又拍云` v1.2.0
+- `Qiniu` v1.0
+- `Tencent Cloud COS v4\v5` v1.1 & v1.5.0
+- `Upyun` v1.2.0
 - `GitHub` v1.5.0
 - `SM.MS V2` v2.3.0-beta.0
-- `阿里云 OSS` v1.6.0
+- `Alibaba Cloud OSS` v1.6.0
 - `Imgur` v1.6.0
 
-**本体不再增加默认的图床支持。你可以自行开发第三方图床插件。详见 [PicGo-Core](https://picgo.github.io/PicGo-Core-Doc/)**。
+**The core application will no longer add support for additional default image hosting services. You can develop third-party image hosting plugins yourself. See [PicGo-Core](https://picgo.github.io/PicGo-Core-Doc/) for details**.
 
-## 特色功能
+## Key Features
 
-- 支持拖拽图片上传
-- 支持快捷键上传剪贴板里第一张图片
-- Windows 和 macOS 支持右键图片文件通过菜单上传 (v2.1.0+)
-- 上传图片后自动复制链接到剪贴板
-- 支持自定义复制到剪贴板的链接格式
-- 支持修改快捷键，默认快速上传快捷键：`command+shift+p`（macOS）| `control+shift+p`（Windows\Linux)
-- 支持插件系统，已有插件支持 Gitee、青云等第三方图床
-  - 更多第三方插件以及使用了 PicGo 底层的应用可以在 [Awesome-PicGo](https://github.com/PicGo/Awesome-PicGo) 找到。欢迎贡献！
-- 支持通过发送 HTTP 请求调用 PicGo 上传（v2.2.0+)
-- 更多功能等你自己去发现，同时也会不断开发新功能
-  - 开发进度可以查看 [Projects](https://github.com/Molunerfinn/PicGo/projects)，会同步更新开发进度
-  <!-- - 欢迎加入 [官方讨论区](https://github.com/Molunerfinn/PicGo/discussions) 与我交流 -->
+- Support for drag and drop image uploads
+- Support for uploading the first image in clipboard via hotkey
+- Windows and macOS support for right-clicking image files to upload via context menu (v2.1.0+)
+- Automatically copy link to clipboard after uploading images
+- Support for custom link format copied to clipboard
+- Support for customizable hotkeys, default quick upload hotkey: `command+shift+p` (macOS) | `control+shift+p` (Windows\Linux)
+- Support for plugin system, existing plugins support Gitee, QingCloud and other third-party image hosting services
+  - More third-party plugins and applications built on PicGo can be found at [Awesome-PicGo](https://github.com/PicGo/Awesome-PicGo). Contributions are welcome!
+- Support for uploading via HTTP requests to PicGo (v2.2.0+)
+- More features for you to discover, and new features are continuously being developed
+  - Development progress can be viewed at [Projects](https://github.com/Molunerfinn/PicGo/projects), which is synchronized with development updates
+  <!-- - Welcome to join the [official discussion forum](https://github.com/Molunerfinn/PicGo/discussions) to communicate with me -->
 
-**如果第一次使用，请参考应用 [使用文档](https://picgo.github.io/PicGo-Doc/guide/getting-started.html)。遇到问题了还可以看看 [FAQ](https://github.com/Molunerfinn/PicGo/blob/dev/FAQ.md) 以及被关闭的 [issues](https://github.com/Molunerfinn/PicGo/issues?q=is%3Aissue+is%3Aclosed)。**
+**If this is your first time using PicGo, please refer to the [User Documentation](https://picgo.github.io/PicGo-Doc/guide/getting-started.html). If you encounter problems, you can also check the [FAQ](https://github.com/Molunerfinn/PicGo/blob/dev/FAQ.md) and closed [issues](https://github.com/Molunerfinn/PicGo/issues?q=is%3Aissue+is%3Aclosed).**
 
-## 下载安装
+## Download and Installation
 
-| 下载源                                        | 地址/安装方式                                               | 平台       | 备注                                                              |
-| --------------------------------------------- | ----------------------------------------------------------- | ---------- | ----------------------------------------------------------------- |
-| GitHub Release                                | https://github.com/Molunerfinn/PicGo/releases               | All        | 国内下载速度可能会慢                                              |
-| [山东大学镜像站](https://mirrors.sdu.edu.cn/) | https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo | All        | 感谢 [山东大学镜像站](https://mirrors.sdu.edu.cn/) 提供的镜像支持 |
-| [Scoop](https://scoop.sh/)                    | `scoop bucket add extras` & `scoop install picgo`           | Windows    | 感谢 @huangnauh 和 @Gladtbam 的贡献                               |
-| [Chocolatey](https://chocolatey.org/)         | `choco install picgo`                                       | Windows    | 感谢 @iYato 的贡献                                                |
-| [Homebrew](https://brew.sh/)                  | `brew install picgo --cask`                                 | macOS      | 感谢 @womeimingzi11 的贡献                                        |
-| [AUR](https://aur.archlinux.org/packages/yay) | `yay -S picgo-appimage`                                     | Arch-Linux | 感谢 @houbaron 的贡献                                             |
+| Download Source                               | Address/Installation Method                                 | Platform   | Notes                                                                          |
+| --------------------------------------------- | ----------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------ |
+| GitHub Release                                | https://github.com/Molunerfinn/PicGo/releases               | All        | Download speed may be slow in China                                            |
+| [SDU Mirror](https://mirrors.sdu.edu.cn/)     | https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo | All        | Thanks to [Shandong University Mirror](https://mirrors.sdu.edu.cn/) for mirror support |
+| [Scoop](https://scoop.sh/)                    | `scoop bucket add extras` & `scoop install picgo`           | Windows    | Thanks to @huangnauh and @Gladtbam for contributions                           |
+| [Chocolatey](https://chocolatey.org/)         | `choco install picgo`                                       | Windows    | Thanks to @iYato for contributions                                             |
+| [Homebrew](https://brew.sh/)                  | `brew install picgo --cask`                                 | macOS      | Thanks to @womeimingzi11 for contributions                                     |
+| [AUR](https://aur.archlinux.org/packages/yay) | `yay -S picgo-appimage`                                     | Arch-Linux | Thanks to @houbaron for contributions                                          |
 
-## 应用截图
+## Application Screenshots
 
 ![](https://raw.githubusercontent.com/Molunerfinn/test/master/picgo/picgo-2.0.gif)
 
 ![picgo-menubar](https://user-images.githubusercontent.com/12621342/34242310-b5056510-e655-11e7-8568-60ffd4f71910.gif)
 
-## 开发说明
+## Development Guide
 
-> 目前仅针对 Mac、Windows。Linux 平台并未测试。
+> Currently only tested on Mac and Windows. Linux platform has not been tested.
 
-如果你想要学习、开发、修改或自行构建 PicGo，可以依照下面的指示：
+If you want to learn, develop, modify, or build PicGo yourself, you can follow the instructions below:
 
-> 如果想学习 Electron-vue 的开发，可以查看我写的系列教程——[Electron-vue 开发实战](https://molunerfinn.com/tags/Electron-vue/)
+> If you want to learn Electron-vue development, you can check out my tutorial series - [Electron-vue Development Practice](https://molunerfinn.com/tags/Electron-vue/)
 
-1. 你需要有 Node、Git 环境，了解 npm 的相关知识。
-2. `git clone https://github.com/Molunerfinn/PicGo.git` 并进入项目。
-3. `yarn` 下载依赖。注意如果你没有 `yarn`，请去 [官网](https://classic.yarnpkg.com/en/docs/install) 下载安装后再使用。 **用 `npm install` 将导致未知错误！**
-4. Mac 需要有 Xcode 环境，Windows 需要有 VS 环境。
-5. 如果需要贡献代码，可以参考[贡献指南](./CONTRIBUTING.md)。
+1. You need to have Node and Git environment, and understand npm-related knowledge.
+2. `git clone https://github.com/Molunerfinn/PicGo.git` and enter the project.
+3. `yarn` to download dependencies. Note that if you don't have `yarn`, please go to the [official website](https://classic.yarnpkg.com/en/docs/install) to download and install it before use. **Using `npm install` will cause unknown errors!**
+4. Mac requires Xcode environment, Windows requires VS environment.
+5. If you need to contribute code, please refer to the [Contribution Guide](./CONTRIBUTING.md).
 
-### 开发模式
+### Development Mode
 
-输入 `npm run electron:serve` 进入开发模式，开发模式具有热重载特性。不过需要注意的是，开发模式不稳定，会有进程崩溃的情况。此时需要：
+Enter `npm run electron:serve` to enter development mode, which has hot reload features. However, please note that development mode is unstable and may have process crashes. In this case, you need to:
 
 ```bash
-ctrl+c # 退出开发模式
-npm run dev # 重新进入开发模式
+ctrl+c # Exit development mode
+npm run dev # Re-enter development mode
 ```
 
-**注：Windows 开发模式运行之后会在底部任务栏的右下角应用区出现 PicGo 的应用图标。**
+**Note: After running Windows development mode, the PicGo application icon will appear in the application area in the lower right corner of the bottom taskbar.**
 
-### 生产模式
+### Production Mode
 
-如果你需要自行构建，可以 `npm run build` 开始进行构建。构建成功后，会在 `dist` 目录里出现构建成功的相应安装文件。
+If you need to build it yourself, you can run `npm run build` to start building. After a successful build, the corresponding installation files will appear in the `dist` directory.
 
-**注意**：如果你的网络环境不太好，可能会出现 `electron-builder` 下载 `electron` 二进制文件失败的情况。这个时候需要在 build 之前指定一下 `electron` 的源为国内源：
+**Note**: If your network environment is not good, `electron-builder` may fail to download the `electron` binary file. In this case, you need to specify the `electron` source as a mirror before building:
 
 ```bash
 export ELECTRON_MIRROR="https://npmmirror.com/mirrors/electron/"
-# 在 Windows 上，则可以使用 set ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ （无需引号）
+# On Windows, you can use set ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ (no quotes needed)
 npm run build
 ```
 
-只需第一次构建的时候指定一下国内源即可。后续构建不需要特地指定。二进制文件下载在 `~/.electron/` 目录下。如果想要更新 `electron` 构建版本，可以删除 `~/.electron/` 目录，然后重新运行上一步，让 `electron-builder `去下载最新的 `electron` 二进制文件。
+You only need to specify the mirror source for the first build. Subsequent builds do not need to be specified. Binary files are downloaded in the `~/.electron/` directory. If you want to update the `electron` build version, you can delete the `~/.electron/` directory, and then re-run the previous step to let `electron-builder` download the latest `electron` binary file.
 
-## 其他相关
+## Related Projects
 
-- [vs-picgo](https://github.com/PicGo/vs-picgo)：PicGo 的 VS Code 版。
-- [flutter-picgo](https://github.com/PicGo/flutter-picgo)：PicGo 的手机版 App（支持 Android 和 iOS ）。
-- [PicHoro](https://github.com/Kuingsmile/PicHoro)：另一款支持 PicGo 配置的手机版 App（暂时只支持 Android）。
+- [vs-picgo](https://github.com/PicGo/vs-picgo): PicGo VS Code version.
+- [flutter-picgo](https://github.com/PicGo/flutter-picgo): PicGo mobile app (supports Android and iOS).
+- [PicHoro](https://github.com/Kuingsmile/PicHoro): Another mobile app that supports PicGo configuration (currently only supports Android).
 
-## 赞助
+## Sponsorship
 
-如果你喜欢 PicGo 并且它对你确实有帮助，欢迎给我打赏一杯咖啡哈~
+If you like PicGo and it has been helpful to you, feel free to buy me a cup of coffee~
 
-支付宝：
+Alipay:
 
 ![](https://user-images.githubusercontent.com/12621342/34188165-e7cdf372-e56f-11e7-8732-1338c88b9bb7.jpg)
 
-微信：
+WeChat Pay:
 
 ![](https://user-images.githubusercontent.com/12621342/34188201-212cda84-e570-11e7-9b7a-abb298699d85.jpg)
 

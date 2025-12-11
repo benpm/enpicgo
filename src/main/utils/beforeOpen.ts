@@ -42,7 +42,7 @@ function copyFileOutsideOfElectronAsar (
 }
 
 /**
- * macOS 右键菜单
+ * macOS context menu
  */
 function resolveMacWorkFlow () {
   const dest = `${os.homedir()}/Library/Services/Upload pictures with PicGo.workflow`
@@ -72,7 +72,7 @@ function diffFilesAndUpdate (filePath1: string, filePath2: string) {
 }
 
 /**
- * 初始化剪贴板生成图片的脚本
+ * Initialize clipboard image generation scripts
  */
 function resolveClipboardImageGenerator () {
   const clipboardFiles = getClipboardFiles()
@@ -105,7 +105,7 @@ function resolveClipboardImageGenerator () {
 }
 
 /**
- * 初始化其他语言文件
+ * Initialize other language files
  */
 function resolveOtherI18nFiles () {
   const i18nFolder = path.join(CONFIG_DIR, 'i18n')

@@ -7,7 +7,7 @@ import { T } from '~/main/i18n'
 import { SHORTKEY_COMMAND_UPLOAD } from 'apis/core/bus/constants'
 // from v2.1.2
 const updateShortKeyFromVersion212 = (db: typeof ConfigStore, shortKeyConfig: IShortKeyConfigs | IOldShortKeyConfigs) => {
-  // #557 极端情况可能会出现配置不存在，需要重新写入
+  // #557 In extreme cases, config may not exist and needs to be rewritten
   if (shortKeyConfig === undefined) {
     const defaultShortKeyConfig = {
       enable: true,

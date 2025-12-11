@@ -1,8 +1,8 @@
 export const builtinI18nList: II18nItem[] = [{
-  label: '简体中文',
+  label: 'Simplified Chinese',
   value: 'zh-CN'
 }, {
-  label: '繁體中文',
+  label: 'Traditional Chinese',
   value: 'zh-TW'
 }, {
   label: 'English',

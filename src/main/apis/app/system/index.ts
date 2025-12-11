@@ -85,12 +85,12 @@ export function createContextMenu () {
       }
     ])
   } else if (process.platform === 'linux') {
-    // TODO 图床选择功能
-    // 由于在Linux难以像在Mac和Windows上那样在点击时构造ContextMenu，
-    // 暂时取消这个选单，避免引起和设置中启用的图床不一致
+    // TODO: Image hosting selection functionality
+    // Since it's difficult on Linux to build a ContextMenu on click like on Mac and Windows,
+    // this menu is temporarily disabled to avoid inconsistencies with the enabled image hosting in settings
 
-    // TODO 重启应用功能
-    // 目前的实现无法正常工作
+    // TODO: Restart application functionality
+    // Current implementation does not work properly
 
     contextMenu = Menu.buildFromTemplate([
       {
@@ -244,8 +244,8 @@ export function createTray () {
     })
     // toggleWindow()
   } else if (isLinux) {
-    // click事件在Ubuntu上无法触发，Unity不支持（在Mac和Windows上可以触发）
-    // 需要使用 setContextMenu 设置菜单
+    // Click event does not trigger on Ubuntu, Unity not supported (works on Mac and Windows)
+    // Need to use setContextMenu to set the menu
     createContextMenu()
     tray!.setContextMenu(contextMenu)
   }
